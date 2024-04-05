@@ -1,5 +1,5 @@
 
-![readme-bootcamp](https://github.com/miniguiti/sis-bootcamp-js-vanilla-sptech/assets/37668247/e9457ff6-7683-477d-8f7b-805f1287c879)
+![readme-bootcamp](https://github.com/miniguiti/sis-bootcamp-js-vanilla-sptech/assetss/37668247/e9457ff6-7683-477d-8f7b-805f1287c879)
 
 
 # SPTECH - Bootcamp Integracao com JS Vanilla
@@ -23,7 +23,7 @@ Desenvolvendo habilidades em programação full-stack com o bootcamp de Front-en
 1. Realizando requisição GET e utilizando os dados retornados na tela
 
 ## Preview
-![Captura de tela 2024-04-04 165128](https://github.com/miniguiti/sis-bootcamp-js-vanilla-sptech/assets/37668247/e8cd5ef1-1b82-4806-a68a-88bc7b57843c)
+![Captura de tela 2024-04-04 165128](https://github.com/miniguiti/sis-bootcamp-js-vanilla-sptech/assetss/37668247/e8cd5ef1-1b82-4806-a68a-88bc7b57843c)
 
 
 

@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--pure-black);
-    background-image: url(../imagens/bg.png);
+    background-image: url(../assets/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
