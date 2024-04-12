@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Game Cast | Adicionar Evento</title>
 
     <!-- CSS -->
@@ -13,23 +13,89 @@
     <link rel="stylesheet" href="../css/reset.css">
 
     <!-- Fontes Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <script src="../../src/test.js"></script>
+    <script src="../../src/teste.js"></script>
 
 </head>
 
 <body>
     <nav>
         <div class="container menu">
-            <img src="../assets/logo.png" alt="Logo" class="logo"/>
+            <img src="../assets/logo.png" alt="Logo" class="logo" />
             <a href="schedule.html">_agenda</a>
         </div>
     </nav>
-    <button onclick="window.testeInstance.Teste()">
+    <button onclick="Test()">
         Teste
     </button>
+    <button onclick="TesteWeb()">TesteWeb</button>
+    <div id="teste_div">
+        <img id="teste_img" src="" width="100px" height="70px" alt="Imagem"/>
+    </div>
     <!-- Criar formulário -->
 </body>
 
 </html>
+<script>
+    async function TesteWeb() {
+        const url = 'http://localhost:8080/musicas/foto/1'
+
+        try {
+            let headers = new Headers();
+            headers.append('Content-Type', 'image/jpeg');
+            headers.append('Accept', 'image/jpeg');
+            const resposta = await fetch(url, {
+                mode: 'no-cors',
+                method: "GET",
+                headers: headers
+            })
+
+            // teste_div.innerHTML = resposta
+            //getAllResponseHeaders
+            console.log(resposta)
+            const imagemBlob = await resposta.blob();
+            const urlObjeto = URL.createObjectURL(new Blob([imagemBlob], { type: 'image/jpeg' }));
+            const img = document.getElementById('teste_div')
+            img.innerHTML += `<img src="${urlObjeto}" width="100px" height="70px" alt="Imagem"/>`;
+
+            // teste_div.innerHTML = imagemBlob;
+
+            if (resposta.ok) {
+                console.log('ok')
+                // var respostaJson = await resposta.json();
+                // console.log('JSON: ', respostaJson)
+            }
+        } catch (erro) {
+            console.log("Erro: ", erro);
+        }
+
+        /*
+         fetch(<"yoururl">, {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + <your access token if need>
+    },
+       })
+.then((response) => response.blob())
+.then((blob) => {
+// 2. Create blob link to download
+ const url = window.URL.createObjectURL(new Blob([blob]));
+const link = document.createElement('a');
+link.href = url;
+link.setAttribute('download', `sample.xlsx`);
+ // 3. Append to html page
+ document.body.appendChild(link);
+ // 4. Force download
+ link.click();
+ // 5. Clean up and remove the link
+ link.parentNode.removeChild(link);
+})
+        
+        
+        
+        */
+    }
+</script>

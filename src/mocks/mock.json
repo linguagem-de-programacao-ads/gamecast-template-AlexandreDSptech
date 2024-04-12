@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Genshin Impact",
+        "description": "Jogo de mundo aberto com design de anime.",
+        "gamers": [
+            "Zozizo",
+            "Xithwk",
+            "I get to decide",
+            "Hlwen"
+        ],
+        "urlVideo": "urlVideo 1",
+        "urlImage": "https://fastcdn.hoyoverse.com/content-v2/hk4e/113484/1a0e331a984e482f84433eac47cd5e3b_1217371561545932985.jpg",
+        "gameDate": "2024-07-01"
+    },
+    {
+        "name": "Pokémon",
+        "description": "Jogo de aventura onde 'animais' acompanham uma jornada com você.",
+        "gamers": [
+            "Lamende",
+            "Wölkev",
+            "Pyore",
+            "Feytsera"
+        ],
+        "urlVideo": "urlVideo 2",
+        "urlImage": "https://licensingcon.com.br/wp-content/uploads/2020/11/pokemon-go-1-billion-2020.jpg",
+        "gameDate": "2024-03-08"
+    },
+    {
+        "name": "Minecraft",
+        "description": "Jogo de sobrevivência e aventura, aqui a sua criatividade é o limite.",
+        "gamers": [
+            "jajangmyeon",
+            "Raonhn",
+            "Hadryans",
+            "Cap"
+        ],
+        "urlVideo": "urlVideo 2",
+        "urlImage": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000000964/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f",
+        "gameDate": "2024-05-03"
+    }
+]
