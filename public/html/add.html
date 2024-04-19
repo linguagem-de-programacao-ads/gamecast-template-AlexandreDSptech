@@ -58,7 +58,9 @@
             const imagemBlob = await resposta.blob();
             const urlObjeto = URL.createObjectURL(new Blob([imagemBlob], { type: 'image/jpeg' }));
             const img = document.getElementById('teste_div')
-            img.innerHTML += `<img src="${urlObjeto}" width="100px" height="70px" alt="Imagem"/>`;
+            console.log(urlObjeto);
+            img.innerHTML += `<img src='${urlObjeto}' alt='aaaa'/>`
+            // img.innerHTML += `<img src="${urlObjeto}" width="100px" height="70px" alt="Imagem"/>`;
 
             // teste_div.innerHTML = imagemBlob;
 

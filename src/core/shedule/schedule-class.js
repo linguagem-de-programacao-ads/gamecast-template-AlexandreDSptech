@@ -11,11 +11,17 @@ class Schedule {
                 headers: headers
             });
             if (response.ok) {
+
+                // const [respota1, resposta2] = await Promise.all([
+                //     response.json(),
+                //     response.json()
+                // ])
                 const responseJson = await response.json();
 
                 const listSchedule = responseJson.map(schedule => {
                     return schedule
                 })
+
                 console.log('SCHEDULE JSON: ', listSchedule)
             }
         } catch (error) {
