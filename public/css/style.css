@@ -142,10 +142,32 @@ nav {
     }
 }
 
-
-
 /* ADICIONAR EVENTO - Inserir CSS da página de adicionar*/
 
+.formulario{
+    display: flex;
+    justify-content: center;
+    
+
+    form{
+        padding: 5px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.left-direction{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.click{
+    cursor: pointer;
+}
+
+/* Media Query - Responsividade */
 @media(max-width: 700px){
     body{
         background-color: red;

@@ -111,36 +111,32 @@ async function findAll() {
                 cards.appendChild(divCardItem);
             });
 
-            const [ json1, json2 ] = await Promise.all([
-                response.json(),
-                response.json()
-            ])
+            // const [ json1, json2 ] = await Promise.all([
+            //     response.json(),
+            //     response.json()
+            // ])
 
-            const { name } = json1
+            // const { name } = json1
 
-            const todosOsJson = {
-                ...json1,
-                json2
-            }
+            // const todosOsJson = {
+            //     ...json1,
+            //     json2
+            // }
 
-            const nameExists = name ? "sim" : "não"
+            // const nameExists = name ? "sim" : "não"
 
-            todosOsJson = {
-                name,
-                idade,
-                json2: {
-                    name,
-                    idade
-                }
-            }
-
-            const json3 = await response.json();
-            const json4 = await response.json();
-
+            // todosOsJson = {
+            //     name,
+            //     idade,
+            //     json2: {
+            //         name,
+            //         idade
+            //     }
+            // }
         }
     } catch (error) {
         console.log("Error: ", error);
     }
 }
 
-findAll()
+findAll();
